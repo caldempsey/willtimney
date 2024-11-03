@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/willtimney/static/css/main.0f4979fe.css",
+    "main.js": "/willtimney/static/js/main.781eacb6.js",
+    "static/js/453.acca0757.chunk.js": "/willtimney/static/js/453.acca0757.chunk.js",
+    "index.html": "/willtimney/index.html",
+    "main.0f4979fe.css.map": "/willtimney/static/css/main.0f4979fe.css.map",
+    "main.781eacb6.js.map": "/willtimney/static/js/main.781eacb6.js.map",
+    "453.acca0757.chunk.js.map": "/willtimney/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f4979fe.css",
+    "static/js/main.781eacb6.js"
+  ]
+}
