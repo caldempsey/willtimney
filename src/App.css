@@ -1,0 +1,151 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Smoke white background */
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modal-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modal-button:focus {
+  outline: 2px solid #000;
+}
+
+.carousel-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 30px; /* Increased gap to prevent overlap */
+}
+
+.carousel-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 1; /* Set z-index to 1 for images */
+}
+
+.carousel-image.selected {
+  outline: 3px solid #000;
+}
+
+.carousel-image:focus {
+  outline: 2px solid #000;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.navigation-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.navigation-buttons button:focus {
+  outline: 2px solid #000;
+}
+
+/* Modal Overlay Styles */
+.modal-overlay,
+.image-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal is on top */
+}
+
+.modal-content,
+.image-modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  position: relative;
+  z-index: 1001; /* Higher than overlay */
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.modal-content button:focus {
+  outline: 2px solid #000;
+}
+
+/* Full Image Styles */
+.full-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.image-modal-content {
+  padding: 0;
+  background: none;
+}
+
+.image-modal-content img {
+  border-radius: 5px;
+}
+
+/* Accessibility Focus Styles */
+.carousel-image:focus {
+  outline: 2px solid #000;
+}
